@@ -15,7 +15,7 @@ A pure backtracking algorithm where the nodes are traversed using DFS until a so
 Instead of traversing every node, first we apply Dijkstra to find the shortest subtracks form every point that needs to be visited and we do the backtracking algorithm with those subtracks instead of doing it with every node.
 ## Branch and Bound
 ### First Implementation
-It's a BFS with priority for the shortest edge, we prune when a path is longer than the current best. It doesn't traverse every node, it uses subpaaths the same way as the second implementation of backtracking does.
+It's a BFS with priority for the shortest edge, we prune when a path is longer than the current best. It doesn't traverse every node, it uses subpaths the same way as the second implementation of backtracking does.
 ### Second Implementation
 Here every partial solution has an upper and lower bound that are calculated doing the sum the worst and best possible subtracks respectively from every node that remains unvisited, we order the tracks by the lower bound and prune when the lower bound is higher than the upper bound, we know we found a solution when the lower and upper bound are equal.
 ### Third implementation
