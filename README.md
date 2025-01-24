@@ -12,7 +12,7 @@ Always takes the best local option at any point, because of this it does not alw
 ### First implementation
 A pure backtracking algorithm where the nodes are traversed using DFS until a solution is found, then when we reach a point that surpasses the current best solution in length we prune it.
 ### Second Implementation
-Instead of traversing every node, first we apply Dijkstra to find the shortest subtracks form every point that needs to be visited and we do the baacktracking algorithm with those subtracks instead of doing it with every node.
+Instead of traversing every node, first we apply Dijkstra to find the shortest subtracks form every point that needs to be visited and we do the backtracking algorithm with those subtracks instead of doing it with every node.
 ## Branch and Bound
 ### First Implementation
 It's a BFS with priority for the shortest edge, we prune when a path is longer than the current best. It doesn't traverse every node, it uses subpaaths the same way as the second implementation of backtracking does.
