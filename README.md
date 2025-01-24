@@ -8,7 +8,7 @@ The application was provided to me, I implemented the searching algorithms.
 Finds the sortest path between a specified node and all the other nodes in the graph.
 ## Greedy
 Always takes the best local option at any point, because of this it does not always find the shortest path.
-##Backtracking
+## Backtracking
 ### First implementation
 A pure backtracking algorithm where the nodes are traversed using DFS until a solution is found, then when we reach a point that surpasses the current best solution in length we prune it.
 ### Second Implementation
