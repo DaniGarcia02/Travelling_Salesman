@@ -17,8 +17,8 @@ Instead of traversing every node, first we apply Dijkstra to find the shortest s
 ### First Implementation
 It's a BFS with priority for the shortest edge, we prune when a path is longer than the current best. It doesn't traverse every node, it uses subpaths the same way as the second implementation of backtracking does.
 ### Second Implementation
-Here every partial solution has an upper and lower bound that are calculated doing the sum the worst and best possible subtracks respectively from every node that remains unvisited, we order the tracks by the lower bound and prune when the lower bound is higher than the upper bound, we know we found a solution when the lower and upper bound are equal.
+Here every partial solution has an upper and lower bound that are calculated doing the sum of the worst and best possible subtracks respectively from every node that remains unvisited, we order the tracks by the lower bound and prune when the lower bound is higher than the upper bound, we know we found a solution when the lower and upper bound are equal.
 ### Third implementation
 This is a more sophisticated version of the second implementation, instead of calculating the bounds using every posible subpath from the unvisited nodes, we only calculate them with subpaths that can actually be used in the current partial solution, this way we order in a better way the partial solutions and are also able to prune better.
 ## Randomized algorithms
-Not yet implementd.
+Not implemented yet.
