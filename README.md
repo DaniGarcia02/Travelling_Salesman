@@ -4,6 +4,8 @@ This is an exercise made at University, it is an application that can read a gra
 
 The application was provided to me, I implemented the searching algorithms.
 
+My implementations on the algorithms can be found inside the GraphApplication folder and in the cpp files with the name of the algorithms.
+
 ## Dijkstra
 Finds the sortest path between a specified node and all the other nodes in the graph.
 ## Greedy
