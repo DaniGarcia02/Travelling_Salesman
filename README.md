@@ -1,6 +1,6 @@
 # GraphApplication
 
-This is an exercise made at University, it is an application that can read graph that represent locations and I had to implement de searching algorithms to find the optimal path from the starting node to the ending node while traversing through some intermediate nodes.
+This is an exercise made at University, it is an application that can read a graph that represents locations and I had to implement de searching algorithms to find the optimal path from the starting node to the ending node while traversing through some intermediate nodes.
 
 The application was provided to me, I implemented the searching algorithms.
 
@@ -20,5 +20,5 @@ It's a BFS with priority for the shortest edge, we prune when a path is longer t
 Here every partial solution has an upper and lower bound that are calculated doing the sum of the worst and best possible subtracks respectively from every node that remains unvisited, we order the tracks by the lower bound and prune when the lower bound is higher than the upper bound, we know we found a solution when the lower and upper bound are equal.
 ### Third implementation
 This is a more sophisticated version of the second implementation, instead of calculating the bounds using every posible subpath from the unvisited nodes, we only calculate them with subpaths that can actually be used in the current partial solution, this way we order in a better way the partial solutions and are also able to prune better.
-## Randomized algorithms
-Not implemented yet.
+## Probabilistic algorithms
+This algorithm works similar to Gradient Descent, at the beginning of the algorithm the path is chosen randomly from a matrix with all connections between the subtracks in the graph, after this initialization we swap the order of this subpaths and if they are shorter than the previous result we had we continue swapping them until it no longer reduces its length. This process is repeated many times, the exact number depends on the number of visits the graph has. Though this method doesn't guarantee that the optimal path will be found it is a really fast method that can be executed so many times that makes it very likely to find the optimal solution or at least a really close alternative.
